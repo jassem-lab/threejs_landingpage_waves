@@ -33,7 +33,7 @@ const material = new THREE.MeshStandardMaterial({
 
 const plane = new THREE.Mesh(geometry, material)
 scene.add(plane)
-plane.rotation.x = 181
+plane.rotation.x =  181
 gui.add(plane.rotation, 'x').min(0).max(500)
 
 // Mesh
@@ -48,6 +48,19 @@ pointLight.position.x = 2
 pointLight.position.y = 3
 pointLight.position.z = 4
 scene.add(pointLight)
+
+// Lights 2 
+
+// const pointLight2 = new THREE.PointLight(ff0000, 2)
+// pointLight.position.x = 3 
+// pointLight.position.y = 3
+// pointLight.position.z = 4 
+
+
+// gui.add(pointLight2.position, 'x')
+// gui.add(pointLight2.position, 'y')
+// gui.add(pointLight2.position, 'z')
+
 
 
 gui.add(pointLight.position, 'x')
