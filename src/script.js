@@ -49,23 +49,10 @@ pointLight.position.y = 3
 pointLight.position.z = 4
 scene.add(pointLight)
 
-// Lights 2 
-
-// const pointLight2 = new THREE.PointLight(ff0000, 2)
-// pointLight.position.x = 3 
-// pointLight.position.y = 3
-// pointLight.position.z = 4 
-
-
-// gui.add(pointLight2.position, 'x')
-// gui.add(pointLight2.position, 'y')
-// gui.add(pointLight2.position, 'z')
-
-
-
 gui.add(pointLight.position, 'x')
 gui.add(pointLight.position, 'y')
 gui.add(pointLight.position, 'z')
+
 
 const col = { color: '#00f000' }
 gui.addColor(col , 'color').onChange(()=>{
